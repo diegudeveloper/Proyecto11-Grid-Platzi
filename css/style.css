@@ -20,10 +20,10 @@ header .container-nav {
 }
 
 header .container-nav .container-menu {
+    height: 10vh;
     display: grid;
     grid-template-columns: 1fr 100px 100px 100px 100px;
     grid-gap: 10px;
-    height: 60px;
     justify-items: center;
     align-items: center;
 }
@@ -65,7 +65,8 @@ header .container-nav .container-menu li a {
 .hero .container-hero .text-hero1 {
     font-size: 52px;
     margin-bottom: 10px;
-    font-weight: 700;
+    font-family: 'Lemonada', cursive;
+    font-weight: 500;
 }
 
 .hero .container-hero .text-hero2 {
@@ -92,6 +93,7 @@ header .container-nav .container-menu li a {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
     header .container-nav {
         width: 90%;
         margin-left: auto;
@@ -123,9 +125,13 @@ header .container-nav .container-menu li a {
     }
 
     .hero .container-hero .text-hero1 {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 0;
         font-size: 42px;
         margin-bottom: 30px;
+        line-height: 44px;
     }
 
     .hero .container-hero .text-hero2 {
