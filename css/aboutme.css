@@ -10,18 +10,19 @@
     height: auto;
     background-color: #f2f3f8;
     padding-top: 100px;
+    padding-bottom: 100px;
     
 }
 
 .aboutsection .container-about {
     width: 90%;
-    height: 700px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 1fr;
-    display: flex;
+    /*display: flex;*/
     order: 0;
 }
 
@@ -33,16 +34,60 @@
     align-self: center;
     align-items: center;
     order: 2;
-    padding: 0 40px;
+    padding: 0 40px;  
 }
+
 .aboutsection .container-about .text-about .aboutme {
-    padding-top: 125px;
+    /*padding-top: 140px;*/
     font-size: 60px;
+    
 }
 
 .aboutsection .container-about .text-about .aboutme-text {
     font-size: 30px;
     text-transform: unset;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.aboutsection .container-about .text-about hr {
+    width: 90%;
+    height: 0.5px;
+    border: 0;
+    background-color: #000000;
+    margin-top: 30px;
+    opacity: 0.1;
+}
+
+.aboutsection .container-about .text-about .aboutme-text2 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.aboutsection .container-about .text-about .button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    border: solid 1px transparent;
+    border-radius: 4px;
+    background-color: #9555af;
+    padding: 0.5em 1em;
+    margin-top: 30px;
+}
+
+.aboutsection .container-about .text-about .button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.aboutsection .container-about .text-about .button:hover {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+}
+
+.aboutsection .container-about .text-about .button:hover a {
+    color: #9555af;
 }
 
 .aboutsection .container-about .img-aboutme {
@@ -54,5 +99,36 @@
     background-repeat: no-repeat;
     order: 1;
 }
+
+
+
+
+
+/***responsive desing ***/ 
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .aboutsection {
+        padding-top: 0;
+    }
+
+    .aboutsection .container-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 1fr;
+    }
+
+    .aboutsection .container-about .text-about {
+        order: 2;
+    }
+
+    .aboutsection .container-about .img-aboutme {
+        order: 1;
+        
+    }
+   
+
+}
+
+
 
 
