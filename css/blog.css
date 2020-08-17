@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.blog {
+    width: 100%;
+    height: 700px;
+    background-color: #f2f3f8;
+}
+
+.blog .container-blog {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.blog .container-blog .text-blog {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.blog .container-blog .container-grid-blog {
+    /*width: 100%;
+    height: 100%;*/
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+
+.blog .container-blog .container-grid-blog .grid-items {
+    width: 100%;
+    height: 450px;
+    --webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.123);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
+    
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-1 {
+    width: 90%;
+    height: 70%;
+    margin-right: auto;
+    margin-left: auto;
+
+    align-self: center;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-1 .date {
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-1 .presentation {
+    width: 100%;
+    font-size: 24px;
+    letter-spacing: 1.7px;
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-1 .text-comements {
+    width: 100%;
+    font-size: 18px;
+}
+
+/*.blog .container-blog .container-grid-blog .grid-items hr {
+   width: 30%;
+   height: 1px;
+   margin-left: 15px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    
+}*/
+
+.blog .container-blog .container-grid-blog .grid-items .part-2 {
+    width: 90%;
+    height: 30%;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-2 .img-card {
+    width: 25%;
+    height: auto;
+    
+    border-radius: 100%;
+}
+
+.blog .container-blog .container-grid-blog .grid-items .part-2 .name {
+    width: 75%;
+    text-align: center;
+}
