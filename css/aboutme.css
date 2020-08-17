@@ -11,7 +11,10 @@
     background-color: #f2f3f8;
     padding-top: 100px;
     padding-bottom: 100px;
-    
+}
+
+.aboutsection .aboutme-movil {
+    display: none;
 }
 
 .aboutsection .container-about {
@@ -40,7 +43,6 @@
 .aboutsection .container-about .text-about .aboutme {
     /*padding-top: 140px;*/
     font-size: 60px;
-    
 }
 
 .aboutsection .container-about .text-about .aboutme-text {
@@ -112,19 +114,36 @@
         padding-top: 0;
     }
 
+    .aboutsection .aboutme-movil {
+        display: block;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-size: 60px;
+    }
+
     .aboutsection .container-about {
         grid-template-columns: 1fr;
-        grid-template-rows: 400px 1fr;
+        grid-template-rows: 230px 1fr;
     }
 
     .aboutsection .container-about .text-about {
         order: 2;
+        padding: 0;
+    }
+
+    .aboutsection .container-about .text-about .aboutme {
+        display: none;
     }
 
     .aboutsection .container-about .img-aboutme {
         order: 1;
-        
+        height: 90%;
     }
+
+    
    
 
 }
