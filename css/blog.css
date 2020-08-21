@@ -36,7 +36,7 @@
     height: 450px;
     --webkit-box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.123);
     box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.123);
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     
 }
 
@@ -104,11 +104,12 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .blog {
         height: auto;
+        padding-bottom: 60px;
     }
     .blog .container-blog .container-grid-blog {
         grid-template-columns: 1fr;
         grid-template-rows: 450px 450px 450px;
-        grid-row-gap: 20px;
+        grid-row-gap: 40px;
         justify-content: center;
     }
 }

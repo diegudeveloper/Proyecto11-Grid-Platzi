@@ -93,6 +93,7 @@ header .container-nav .container-menu li a {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
     
     header .container-nav {
         width: 90%;
@@ -144,6 +145,13 @@ header .container-nav .container-menu li a {
         height: 500px;
     }
 }
+
+@media screen and (min-width: 360px) {
+    .container-hero {
+        margin-bottom: 60px;
+    }
+}
+
 
 
 
