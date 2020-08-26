@@ -108,6 +108,18 @@
 
 /***responsive desing ***/ 
 
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+
+    .aboutsection {
+        padding-top: 50px;
+        padding-block: 50px;
+    }
+
+}
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .aboutsection {
