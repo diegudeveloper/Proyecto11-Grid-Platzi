@@ -12,6 +12,7 @@ header {
     height: 10vh;
 }
 
+
 header .container-nav {
     width: 90%;
     height: 10vh;
@@ -116,26 +117,63 @@ header .container-nav .container-menu li a {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
+
+    header {
+        height: 30vh;
+        position: relative;
+    }
+
+    header input {
+        display: none;
+    }
+
+    header label {
+        padding: 20px;
+    }
+
+    header label img {
+        width: 40px;
+    }
     
     header .container-nav {
         width: 90%;
+        height: 30vh;
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
     }
 
-    header .container-nav .container-menu{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    header .container-nav .container-menu {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 30px);
+        justify-items: flex-start;
+
+        transform: translateX(-100%);
+        transition: all 0.5s;
     }
+
+    #btn-menu:checked ~ .container-nav > .container-menu {
+        transform: translateX(0);
+    }
+
+
 
     header .container-nav .container-menu li a {
         font-size: 16px;
     }
 
+
     header .container-nav .container-menu .logo {
+        display: none;
         justify-self: center;
     }
+
+    /*.hero {
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }*/
 
     .hero .container-hero {
         display: flex;
