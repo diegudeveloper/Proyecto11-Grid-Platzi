@@ -12,6 +12,13 @@ header {
     height: 10vh;
 }
 
+header input {
+    display: none;
+}
+
+header .icon {
+    display: none;
+}
 
 header .container-nav {
     width: 90%;
@@ -118,21 +125,16 @@ header .container-nav .container-menu li a {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* Styles */
 
-    header {
-        height: 30vh;
-        position: relative;
-    }
-
-    header input {
-        display: none;
-    }
-
-    header label {
-        padding: 20px;
+  
+    header label .icon {
+        display: block;
+        z-index: 100;
+        padding-left: 12px;
     }
 
     header label img {
-        width: 40px;
+        width: 50px;
+        color: #000;
     }
     
     header .container-nav {
@@ -141,26 +143,44 @@ header .container-nav .container-menu li a {
         margin-left: auto;
         margin-right: auto;
         overflow: hidden;
+        z-index: 100;
     }
 
 
     header .container-nav .container-menu {
+        height: 30vh;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 30px);
+        grid-template-rows: repeat(6, 40px);
         justify-items: flex-start;
 
         transform: translateX(-100%);
         transition: all 0.5s;
+        background-color: #000;
     }
 
     #btn-menu:checked ~ .container-nav > .container-menu {
         transform: translateX(0);
     }
 
+    header .container-nav .container-menu li {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
+    header .container-nav .container-menu li:nth-child(6) {
+        border-bottom: none;
+    }
+
+    header .container-nav .container-menu li:hove {
+        background-color: #f4f4f4;
+    }
 
     header .container-nav .container-menu li a {
         font-size: 16px;
+        color: #fff;
+        padding-left: 10px;
     }
 
 
@@ -169,11 +189,6 @@ header .container-nav .container-menu li a {
         justify-self: center;
     }
 
-    /*.hero {
-        position: absolute;
-        top: 100px;
-        left: 0;
-    }*/
 
     .hero .container-hero {
         display: flex;
@@ -193,6 +208,7 @@ header .container-nav .container-menu li a {
         font-size: 42px;
         margin-bottom: 30px;
         line-height: 44px;
+        font-weight: 100;
     }
 
     .hero .container-hero .text-hero2 {
